@@ -11,6 +11,9 @@ function appendInput(input) {
         screen.value = '-';
         return;
     }
+    if (currentValue.startsWith('-') && input === '-' && !currentValue.slice(1).includes('-')) {
+        return; 
+    }
 
     if ("+-*/.".includes(currentValue.slice(-1))) {
         if (input === '-' && "+*/".includes(currentValue.slice(-1))) {
@@ -35,14 +38,13 @@ function reset() {
 function calculate() {
     const screen = document.getElementById('screen');
     const expression = screen.value;
- 
+
     if ("+-*/.".includes(expression.slice(-1))) {
         screen.value = 'Error';
         return;
     }
 
     try {
-        
         const result = eval(expression); 
         screen.value = Number.isFinite(result) ? +result.toFixed(3) : 'Error';
     } catch {
