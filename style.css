@@ -12,10 +12,6 @@
 
 :root {
     --mainbgcolor: hsl(222, 26%, 31%);
-    --mainbg1color: hsl(0, 0%, 90%);
-    --mainbg2color: hsl(268, 75%, 9%);
-    --twotkbg: hsl(0, 5%, 81%);
-    --tbgkbgsbg: hsl(268, 71%, 12%);
 }
 
 body {
