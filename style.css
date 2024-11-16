@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    color: hsl(221, 14%, 31%);
+    font-weight: 700;
+}
+
+:root {
+    --mainbgcolor: hsl(222, 26%, 31%);
+    --mainbg1color: hsl(0, 0%, 90%);
+    --mainbg2color: hsl(268, 75%, 9%);
+    --twotkbg: hsl(0, 5%, 81%);
+    --tbgkbgsbg: hsl(268, 71%, 12%);
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    background-color: var(--mainbgcolor);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    color: #FFF;
+}
+
+#screen {
+    width: 450px;
+    height: 100px;
+    margin: 10px 0;
+    text-align: right;
+    font-size: 32px;
+    background-color: hsl(224, 36%, 15%);
+    color: #FFF;
+    border: 0;
+    outline: none;
+    border-radius: 7px;
+    padding-right: 40px; 
+    padding-right: 20px; 
+}
+
+button {
+    width: 90px;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 10px;
+    font-size: 32px;
+}
+
+button.reset {
+    width: 190px; 
+}
+
+.btn {
+    display: flex;
+    width: 450px;
+    flex-flow: wrap;
+    background-color: #252D44;
+    padding: 10px 5px;
+    margin: 8px 0;
+    border-radius: 7px;
+}
+
+.reset,
+.del {
+    background-color: hsl(225, 21%, 49%);
+    color: #FFF;
+    font-size: 16px;
+}
+
+.equal {
+    width: 200px;
+    background-color: hsl(6, 63%, 50%);
+    color: #FFF;
+    font-size: 16px;
+}
