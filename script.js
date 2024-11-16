@@ -15,6 +15,8 @@ function appendInput(input) {
         return; 
     }
 
+    if (screen.value.length > 10) return;
+
     if ("+-*/.".includes(currentValue.slice(-1))) {
         if (input === '-' && "+*/".includes(currentValue.slice(-1))) {
             screen.value += input; 
